@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+ <div id="formcont">
+     
+     <div class="wrapper__area" id="wrapper_Area">
+         <!-- Forms Area -->
+         <div class="forms__area">
+           <!-- Login Form -->
+           <form class="login__form" id="loginForm">
+             <!-- Form Title -->
+             <h1 class="form__title">LOGIN!</h1>
+             <!-- inputs Groups -->
+             <div class="input__group">
+               <label class="field">
+                 <input type="text" name="username" placeholder="Email" id="loginemail">
+               </label>
+               <span class="input__icon"><i class="bx bx-user"></i></span>
+               <small class="input__error_message"></small>
+             </div>
+             <div class="input__group">
+               <label class="field">
+                 <input type="password" name="password" placeholder="Password" id="loginPassword">
+               </label>
+               <span class="input__icon"><i class="bx bx-lock"></i></span>
+               <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+               <small class="input__error_message"></small>
+             </div>
+           
+             <!-- Login Button -->
+             <button type="submit" class="submit-button" id="loginSubmitBtn">LOGIN</button>
+             <!-- Alternate Login -->
+            
+           </form> <!-- End Login Form -->
+       
+           <!-- Sign Up Form -->
+           <form class="sign-up__form" id="signUpForm">
+             <!-- Form Title -->
+             <h1 class="form__title">Sign Up!</h1>
+             <!-- inputs Groups -->
+             <div class="input__group">
+               <label class="field">
+                 <input type="text" name="username" placeholder="Username123..." id="signUpUsername">
+               </label>
+               <span class="input__icon"><i class="bx bx-user"></i></span>
+               <small class="input__error_message"></small>
+             </div>
+             <div class="input__group">
+               <label class="field">
+                 <input type="text" name="email" placeholder="Email@example.com" id="signUpEmail">
+               </label>
+               <span class="input__icon"><i class="bx bx-at"></i></span>
+               <small class="input__error_message"></small>
+             </div>
+             <div class="input__group">
+               <label class="field">
+                 <input type="password" name="password" placeholder="Password123$#%&..." id="signUpPassword">
+               </label>
+               <span class="input__icon"><i class="bx bx-lock"></i></span>
+               <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+               <small class="input__error_message"></small>
+             </div>
+             <div class="input__group confirm__group">
+               <label class="field">
+                 <input type="password" name="confirm_password" placeholder="Confirm Password" id="signUpConfirmPassword">
+               </label>
+               <span class="input__icon"><i class="bx bx-lock"></i></span>
+               <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+               <small class="input__error_message"></small>
+             </div>
+             <!-- Sign Up Button -->
+             <button type="submit" class="submit-button" id="signUpSubmitBtn">Sign Up</button>
+             <!-- Alternate Login -->
+             
+           </form> <!-- End Sign Up Form -->
+         </div><!-- End Forms Area -->
+       
+         <!-- Aside Area -->
+         <div class="aside__area" id="aside_Area">
+           <div class="login__aside-info">
+             <h4 class="editedtext">Hello</h4>
+             <img src="https://d.top4top.io/p_1945xjz2y1.png" alt="Image">
+             <p class="paratext">Enter your personal details and start journey with us</p>
+             <button id="aside_signUp_Btn">Sign Up</button>
+           </div>
+           <div class="sign-up__aside-info">
+             <h4 class="editedtextwelcome">Welcome</h4>
+             <img src="https://e.top4top.io/p_1945sidbp2.png" alt="Image">
+             <p class="paratext">To Keep connected with us please login with your personal info</p>
+             <button id="aside_signIn_Btn">Sign In</button>
+           </div>
+         </div>
+       </div>
+ </div>
+<!-- Wrapper Area -->
+  <!-- End Wrapper Area -->
+  <div
+  id="loader"
+  style="
+    height: 100vh;
+    width: vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <img
+    height="200px"
+    width="200px"
+    src="https://i.gifer.com/origin/d3/d3f472b06590a25cb4372ff289d81711_w200.gif"
+    alt=""
+  />
+</div>
+  <div id="contentcont" class="container">
+  
+   
+      <h2 id="greeting" class="container"></h2>
+   
+
+  
+            
+
+     <div id="bodycont" class="container">
+      <h3>SELECT WHAT DO YOU WANT TO DO!</h3>
+      <div class="cardscont">
+
+        <div class="carditm addtodocont">
+<button class="chipbtn " id="addtodo">ADD TODO </button>
+        </div>
+        <div class="carditm alltodocont">
+          <button class="chipbtn"  id="viewtodo">VIEW ALL TODO </button>
+        </div>
+        <div class="carditm compttodocont">
+          <button class="chipbtn"  id="viewcompletedtodo" >VIEW COMPLETED TODO </button>
+        </div>
+        <div class="carditm pendingtodocont">
+          <button class="chipbtn"  id="viewpendingtodo" >VIEW PENDING TODO </button>
+        </div>
+        <div class="carditm todaystdocont">
+          <button class="chipbtn"  id="viewtodaystodo">VIEW TODAYS TODO </button>
+        </div>
+        <div class="carditm logoutcont">
+          <button  class="logoutbtns" id="logoutbtn">LOGOUT</button>
+        </div>
+      </div>
+  <div class="todocont" id="todocont">
+    <h4>ADD A TODO</h4>
+    <label >TASK :<input type="text" id="taskinput"></label>
+<label >TASK DATE AND TIME :<input type="datetime-local" id="taskdatetime" min=""></label>
+
+<!-- <button class="submittodo" id="submittodobtn">SUBMIT TODO</button> -->
+<button type="button" class="btn btn-primary submittodo" id="submittodobtn">SUBMIT TODO</button>
+</div>
+
+ 
+     <div id="filtereddiv">
+
+     </div> 
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js" integrity="sha512-KKbQg5o92MwtJKR9sfm/HkREzfyzNMiKPIQ7i7SZOxwEdiNCm4Svayn2DBq7MKEdrqPJUOSIpy1v6PpFlCQ0YA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./app.js" type="module"></script>
+</body>
+</html>
